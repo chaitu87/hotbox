@@ -1,0 +1,129 @@
+<head>
+	<title>hotbox-web</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/soundmanager2.js"></script>
+	<!--<script type="text/javascript" src="js/soundmanager2-nodebug.js"></script>-->
+	<script type="text/javascript" src="js/facebook.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="js/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="js/jquery.fileupload.js"></script>
+	<script type="text/javascript" src="js/upload.js"></script>
+	<script type="text/javascript" src="//connect.soundcloud.com/sdk.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="fb-root"></div>
+	<div id="facebook">
+		<button class="btn btn-lg btn-facebook" onclick="FB.login()"><i class="fa fa-facebook"></i> | Connect to Hotbox Player using Facebook</button>
+	</div>	
+	<div class="top-bar">
+		<div class="left-bar">
+			<div class="row-fluid">
+				<div class="col-md-4">
+					<p class="logo">HOTBOX</p>
+				</div>
+				<div class="col-md-8">
+					<div class="search-bar">
+						<div class="input-group">
+							<input type="text" class="form-control soundcloud-search" value="civil wars">
+							<span class="input-group-btn">
+								<button class="btn btn-default search" type="button">Search</button>
+								<button class="btn btn-default" type="button">Upload</button>
+							</span>
+						</div><!-- /input-group -->
+					</div>
+					<div class="suggestions">
+						<ul class="suggested inline">
+							<li>Numb Encore</li>
+							<li>Paperbond</li>
+							<li>Beat it</li>
+							<li>Buffalo Soldier</li>
+							<li>Californication</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right-bar">
+			<div class="row-fluid">
+				<div class="col-md-12">
+					<div class="player">
+						<div class="player-buttons center prev-container">
+							<div class="prev">
+								<i class="fa fa-step-backward fa"></i>
+							</div>
+						</div>
+						<div class="player-buttons center playpause-container">
+							<div class="playpause">
+								<div class="play">
+									<i class="fa fa-play fa-2x"></i>
+								</div>
+								<div class="pause hide">
+									<i class="fa fa-pause fa-2x"></i>
+								</div>
+							</div>
+						</div>
+						<div class="player-buttons center next-container">
+							<div class="next">
+								<i class="fa fa-step-forward fa"></i>
+							</div>
+						</div>
+					</div>
+					<div class="info">
+						<div class="title">
+							<p class="track-title">No Track is playing</p>
+							<p class="track-time"><span class="current">--</span> / <span class="total">--</span></p>
+						</div>
+						<div class="track-progress">
+							<div class="track-progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-body">
+		<div class="left-body">
+			<div class="navigation-main">
+				<ul class="main-menu">
+					<li class="menu-item search-results">Search Results</li>
+					<li class="menu-item history">History</li>
+					<li class="menu-item bookmarks">Bookmarks</li>
+					<li class="menu-item chat">Chat</li>
+					<li class="menu-item profile">Profile</li>
+				</ul>
+			</div>
+			<div class="main-content">
+				<div class="search-results-view hide">
+					<ul class="track-results">
+						
+					</ul>
+				</div>
+				<div class="history-view hide">History</div>
+				<div class="bookmarks-view hide">Bookmarks</div>
+				<div class="chat-view hide">Chats</div>
+				<div class="profile-view hide">Profile</div>
+			</div>
+		</div>
+		<div class="right-body">
+			<ul class="playlist-main">
+				
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bar">
+		<ul class="inline">
+			<li>About</li>
+			<li>Author</li>
+			<li>Copyright 2014</li>
+		</ul>
+	</div>
+</body>
